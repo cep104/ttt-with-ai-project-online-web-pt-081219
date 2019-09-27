@@ -22,4 +22,7 @@ class Board
   def position(input)
     self.cells[input.to_i-1]
   end
+  
+  def full? 
+  end
 end
