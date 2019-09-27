@@ -20,5 +20,6 @@ class Board
   end
   
   def position(input)
+    
   end
 end
