@@ -19,6 +19,6 @@ class Board
     puts " #{self.cells[6]} | #{self.cells[7]} | #{self.cells[8]} "
   end
   
-  def position(input, marker)
+  def position(input)
   end
 end
