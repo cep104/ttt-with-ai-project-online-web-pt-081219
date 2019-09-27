@@ -20,8 +20,6 @@ class Board
   end
   
   def position(input)
-    input = ""
-    input = gets.chomp
-    input.to_i
+    self.cells[input.to_i-1]
   end
 end
