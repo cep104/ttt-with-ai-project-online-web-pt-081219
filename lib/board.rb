@@ -20,6 +20,7 @@ class Board
   end
   
   def position(input)
-    
+    input=gets.chomp
+    input.to_i
   end
 end
