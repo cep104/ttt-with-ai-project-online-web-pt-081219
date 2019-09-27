@@ -5,6 +5,6 @@ class Board
   
   def reset! 
     cells.clear
-    binding.pry
+    cells
   end
 end
