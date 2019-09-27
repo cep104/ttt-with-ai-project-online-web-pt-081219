@@ -4,5 +4,6 @@ class Board
   
   def reset! 
     cells.clear
+    cells = Array.new(9,"")
   end
 end
