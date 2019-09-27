@@ -30,4 +30,17 @@ class Board
   def turn_count 
      self.cells.count("X") + self.cells.count("O")
    end
+   
+   def taken?(position) #check board position
+    self.cells[position.to_i-1] == "X" || #board position -1 because of test using range 1-9 (user input numbers)
+    self.cells[position.to_i-1] == "O"
+  end
+
+  def valid_move?(position)
+    !taken?(position) && position.to_i >0 && position.to_i <=9
+  end
+
+  def update(position, player)
+      self.cells[position.to_i-1] = player.token
+  end
 end
