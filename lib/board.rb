@@ -1,10 +1,9 @@
 require 'pry'
 class Board 
   attr_accessor :cells
-  @cells = Array.new(9, "")
+  @cells = []
   
   def reset! 
-    @cells.clear
-    @cells
+   self.cells = Array.new(9, " ")
   end
 end
